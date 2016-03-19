@@ -112,7 +112,8 @@
 		<footer id="footer">
 		    <div id="footernav">
                 <ul>
-                    <li><a href="signIn.html">Sign in / Register</a></li>
+                    <li><a href="login_form.php">Login</a></li>
+                    <li><a href="register_form.php">Register</a></li>
                     <li><a href="aboutUs.html">About Us</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="services.html">Services</a>
