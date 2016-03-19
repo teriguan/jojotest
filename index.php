@@ -45,6 +45,7 @@
             <br>
 		<?php
 			if (isLoggedIn()){
+                echo 'Welcome back, ' . $_SESSION['fname'];
 				echo '<a href="logout.php">Logout</a><br/>';
 				echo '<a href="forum.php">Go to forum</a><br/>';
 				echo '>><a href="add_topic_form.php">Create new topic</a>';
