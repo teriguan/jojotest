@@ -1,22 +1,4 @@
-<?php
-	include 'functions.php';
-	require_once('config.php');
-	session_start();
-
-	// Connect to server and select database.
-	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect, error: ".mysql_error());
-	mysql_select_db(DB_DATABASE)or die("cannot select DB, error: ".mysql_error());
-	$tbl_name="topic"; // Table name
-?>
-
-	
-<!-- ==========================================================	-->
-<!--	Created by Devit Schizoper                          	-->
-<!--	Created HomePages http://LoadFoo.starzonewebhost.com   	-->
-<!--	Created Day 01.12.2006                              	-->
-<!-- ========================================================== -->
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
     <head>
@@ -31,27 +13,18 @@
         
         <!--Sign in/Register link-->
         <div id="signin">
-            <?php
-			    if (isLoggedIn()){
-				    echo '<a href="logout.php">Logout</a><br/>';
-				    echo '<a href="forum.php">Go to forum</a><br/>';
-				    echo '>><a href="add_topic_form.php">Create new topic</a>';
-			    } else {
-				    echo '<a href="login_form.php">Login</a><br/>';
-				    echo '<a href="register_form.php">New user?</a>';
-			    }
-		    ?>
+            <a href="signin.html">login/register</a>
         </div>
         <header>
 
             <!--Logo picture directing back to home page-->
-			<a href="index.php"><h1><img src="Images/logo.png"
+			<a href="index.html"><h1><img src="Images/logo.png"
                  width="200" height="200" alt="Jojo's Dog Grooming-Home"></h1></a>
 		</header>
         <nav>
             <div class="dropdown">
                 <ul id="nav">
-                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="services.html" id="drop">Services</a>
 
@@ -84,9 +57,9 @@
 				<h3>Jojo's Dog Grooming is going online!</h3>
                 <p>Greetings!</p>
                 <p>We are setting up a new website to provide better service to our customers.</p>    
-                <p>Take a look around. <a href="register_form.php">Register</a> and <a href="login_form.php">log in</a> to the site to receive news, deals and special offers.</p>
+                <p>Take a look around. <a href="signin.html">Register</a> and sign in to the site to receive news, deals and special offers.</p>
                 <p>You can now book your appointments online through our <a href="Services/booking.html">Booking</a> page.</p>
-                <p>Check out our <a href="Services/Pricing.html">Pricing</a> page for a list of dog services we are providing.</p>
+                <p>Check out our <a href="Services/pricing.html">Pricing</a> page for a list of dog services we are providing.</p>
                 <p>Our <a href="Services/FAQs.html">FAQs</a> page will answer our most frequently asked questions.</p>
 			</div>
         </div>
@@ -95,8 +68,7 @@
 		<footer>
 		    <div id="footernav">
                 <ul>
-                    <li><a href="login_form.php">Log In</a></li>
-                    <li><a href="register_form.php">Register</a></li>
+                    <li><a href="signin.html">Login / Register</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="services.html">Services</a>
