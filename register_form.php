@@ -23,7 +23,7 @@
         <nav>
             <div class="dropdown">
                 <ul id="nav">
-                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="services.html" id="drop">Services</a>
 					    <div class="dropdowncontent">
