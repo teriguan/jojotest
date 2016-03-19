@@ -40,12 +40,11 @@
         
 		<div id="content">
             <div id="leftcol">
-				<!--Sign in form begins here-->
 				<img src="Images/alaskanEskimo.png" height="250" width="250" alt="alaskan eskimo">
 			</div>
 			<div id="rightcol">
-				<!--Regstration form begins here-->
-				<h2>Register</h2>
+				<!--Log in form begins here-->
+				<h2>Log In</h2>
 	<?php
 	if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
 		echo '<ul class="err">';
