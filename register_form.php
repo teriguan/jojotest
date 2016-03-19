@@ -14,16 +14,7 @@
     <body>
         
         <div id="signin">
-            <?php
-			    if (isLoggedIn()){
-				    echo '<a href="logout.php">Logout</a><br/>';
-				    echo '<a href="forum.php">Go to forum</a><br/>';
-				    echo '>><a href="add_topic_form.php">Create new topic</a>';
-			    } else {
-				    echo '<a href="login_form.php">Login</a><br/>';
-				    echo '<a href="register_form.php">New user?</a>';
-			    }
-		    ?>
+
         </div> 
         <header>
 		    <a href="index.html"><h1><img src="Images/logo.png"
