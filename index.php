@@ -45,7 +45,7 @@
         <header>
 
             <!--Logo picture directing back to home page-->
-			<a href="index.html"><h1><img src="Images/logo.png"
+			<a href="index.php"><h1><img src="Images/logo.png"
                  width="200" height="200" alt="Jojo's Dog Grooming-Home"></h1></a>
 		</header>
         <nav>
@@ -84,7 +84,7 @@
 				<h3>Jojo's Dog Grooming is going online!</h3>
                 <p>Greetings!</p>
                 <p>We are setting up a new website to provide better service to our customers.</p>    
-                <p>Take a look around. <a href="sign.html">Register</a> and sign in to the site to receive news, deals and special offers.</p>
+                <p>Take a look around. <a href="register_form.php">Register</a> and <a href="login_form.php">log in</a> to the site to receive news, deals and special offers.</p>
                 <p>You can now book your appointments online through our <a href="Services/booking.html">Booking</a> page.</p>
                 <p>Check out our <a href="Services/Pricing.html">Pricing</a> page for a list of dog services we are providing.</p>
                 <p>Our <a href="Services/FAQs.html">FAQs</a> page will answer our most frequently asked questions.</p>
@@ -95,7 +95,8 @@
 		<footer>
 		    <div id="footernav">
                 <ul>
-                    <li><a href="signIn.html">Sign in / Register</a></li>
+                    <li><a href="login_form.php">Log In</a></li>
+                    <li><a href="register_form.php">Register</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="services.html">Services</a>
