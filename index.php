@@ -54,7 +54,7 @@
 				echo '<a href="register_form.php">New user?</a>';
 			}
 		?>
-	</div>
+	    </div>
         <header>
 
             <!--Logo picture directing back to home page-->
