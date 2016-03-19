@@ -24,7 +24,6 @@
         <title>Jojo's Dog Grooming</title>
         <link rel="stylesheet" href="Style/base.css" media="screen">
         <link rel="stylesheet" href="Style/printstyle.css" media="print">
-        <link rel="stylesheet" href="Style/footernav.css" media="screen">
     </head>
     
     <body>
