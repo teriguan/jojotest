@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Jojo's Dog Grooming - Account</title>
+        <link rel="stylesheet" href="Style/base.css" media="screen">
+        <link rel="stylesheet" href="Style/printstyle.css" media="print">
+    </head>
+    
+    <body>
+        
+        <div id="signin">
+            <a href="signin.html">sign in/register</a>
+        </div> 
+        <header>
+		    <a href="index.html"><h1><img src="Images/logo.png"
+                 width="200" height="200" alt="Jojo's Dog Grooming-Home"></h1></a>
+		</header>
+        <nav>
+            <div class="dropdown">
+                <ul id="nav">
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="services.html" id="drop">Services</a>
+					    <div class="dropdowncontent">
+						    <ul>
+                                <li><a href="Services/pricing.html">Pricing</a></li>
+					            <li><a href="Services/booking.html">Booking</a></li>
+					            <li><a href="Services/faqs.html">FAQs</a></li>
+                            </ul>
+			            </div></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+		<div id="content">
+            <div id="leftcol">
+				<p>Please make sure all required fields are filled before submitting changes to the account.</p>
+				<img src="Images/placeholder.jpg" width="250" height="250" alt="placeholder">
+			</div>
+			<div id="rightcol">
+				<h2>Account</h2>
+				<!--Form for editting account information-->
+					<form name="register" method="post" id="register" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateRegister()">
+						<fieldset>
+						<legend>Owner</legend>
+					    <div id="firstmsg" style="color:Red;display:none">Please enter your first name</div>
+						<label for="firstname">First Name:</label>
+						<br>
+						<input type="text" name="firstname" id="firstname" size="60" required="required" onblur="validateFirstName()" onfocus="focusFirstName()">
+						<br>
+						<br>
+					    <div id="lastmsg" style="color:Red;display:none">Please enter your last name</div>
+						<label for="lastname">Last Name:</label>
+						<br>
+						<input type="text" name="lastname" id="lastname" size="60" required="required" onblur="validateLastName()" onfocus="focusLastName()">
+						<br>
+						<br>
+					    <div id="phonemsg" style="color:Red;display:none">Please enter a valid phone number ex:1234567890</div>
+						<label for="phone">Phone Number:</label>
+						<br>
+						<input type="text" name="phone" id="phone" size="60" required="required" onblur="validatePhone()" onfocus="focusPhone()">
+						<br>
+						<br>
+					    <div id="emailregmsg" style="color:Red;display:none">Please enter a valid email address</div>
+                        <label for="email">Email:</label>
+					    <br>
+					    <input type="text" name="registeremail" id="registeremail" size="30" required="required" onblur="validateRegEmail()" onfocus="focusRegEmail()">
+						<br>
+						<br>
+					    <div id="passregmsg" style="color:Red;display:none">Please enter a password</div>
+						<label for="pass">Password:</label>
+						<br>
+						<input type="password" name="pass" id="pass" size="60" required="required" onblur="validateRegPassword()" onfocus="focusRegPassword()">
+						<br>
+						<br>
+					    <div id="passconmsg" style="color:Red;display:none">Password does not match</div>
+						<label for="confirmpass">Confirm Password:</label>
+						<br>
+						<input type="password" name="confirmpass" id="confirmpass" size="60" required="required" onblur="validateConPassword()" onfocus="focusConPassword()">
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Dog</legend>
+					    <div id="dogmsg" style="color:Red;display:none">Please enter your dog's name</div>
+						<label for="dogname">Dog Name:</label>
+						<br>
+						<input type="text" name="dogname" id="dogname" size="60" required="required" onblur="validateDog()" onfocus="focusDog()">
+						<br>
+						<br>
+					    <div id="breedmsg" style="color:Red;display:none">Please enter your dog's breed</div>
+						<label for="dogbreed">Dog Breed:</label>
+						<br>
+						<input type="text" name="dogbreed" id="dogbreed" size="60" required="required" onblur="validateBreed()" onfocus="focusBreed()">
+						<br>
+						<br>
+						<!--link adds another dog field for registration form-->
+						<a href="#">Add Dog</a>
+					</fieldset>
+					<br>
+					<input type="submit" value="Save Changes">
+				</form>
+			</div>
+        </div>
+		<footer>
+		    <div id="footernav">
+                <ul>
+                    <li><a href="signIn.html">Sign in / Register</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="services.html">Services</a>
+                    <li><a href="Services/pricing.html">Pricing</a></li>
+					<li><a href="Services/booking.html">Booking</a></li>
+					<li><a href="Services/faqs.html">FAQs</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <p>Follow us:</p>
+            <p><a href="#"><img src="Images/facebook.png"
+                 width="50" height="50" alt="Facebook"></a>
+                <a href="#"><img src="Images/instagram.png"
+                 width="50" height="50" alt="instagram"></a>
+                <a href="#"><img src="Images/twitter.png"
+                 width="50" height="50" alt="Twitter"></a></p>
+		</footer>
+        <script src="Script/signIn.js"></script>
+    </body>
+</html>

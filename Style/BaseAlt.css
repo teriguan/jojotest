@@ -1,0 +1,133 @@
+body {
+    background-color: #bea488;
+    font-family: Helvetica, Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#signin {
+    background-color: #bea488;
+    text-align: right;
+    padding: 10px 10px;
+    margin-bottom: 0;
+}
+h1 {
+    font-family: junction, sans-serif;
+    background-color: #B0E5DC;
+    color: #f07877;
+    text-align: center;
+    padding: 30px;
+    margin-top: 0px;
+    width: 100%;
+}
+header {
+    width: 1600px;
+    margin-top: 0px;
+    position: relative;
+}
+nav ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+nav ul li {
+    padding: 60px 30px;
+    border-bottom: 3px solid #74A495;
+}
+nav ul li:nth-last-child(1) {
+    border-bottom: 0px none #ffffff;
+} 
+#signin a {
+    text-decoration: none;
+    color: #B0E5DC;
+}
+#signin a:hover {
+    color: #74A495;
+    text-decoration: underline;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdowncontent {
+    display: none;
+    position: absolute;
+}
+.dropdowncontent ul li {
+    padding-right: 10px;
+}
+.dropdown:hover .dropdowncontent{
+    display: inline-block;
+}
+h2 {
+    font-family: junction, sans-serif;
+    color: #B0E5DC;
+}
+nav {
+    float:left;
+}
+#nav{
+    list-style:none;
+    font-weight:bold;
+    margin-bottom:10px;
+    width:200px;
+    background-color: #bea488;
+    text-align: center;
+}
+#nav a{
+    display:block;
+    padding:5px;
+    color:#B0E5DC;
+    background:#bea488;
+    text-decoration:none;
+}
+#nav a:hover{
+    color:#74A495;
+    text-decoration:none;
+}
+/*--- DROPDOWN ---*/
+#nav ul{
+    list-style:none;
+    position:absolute;
+    left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+    background-color: #bea488;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+#nav li:hover ul{ 
+    left:-63px;
+}
+#nav li:hover ul li a:hover{
+    background:#bea488;
+    text-decoration: none;
+}
+#nav li ul li {
+    border-right: 0px none #ffffff;
+    padding: 0px 10px; 
+}
+#leftcol {
+    margin: 5% 1%;
+    padding: 1% 5% 1% 5%;
+    float: left; 
+    width: 200px;
+    border-left: 3px solid #74A495;
+}
+#rightcol {
+    float: left;
+    width: 450px;
+    border-left: 3px solid #74A495;
+    padding: 1% 5%;
+    margin: 5% 1%;
+}
+footer {
+    width: 1600px;
+    border-top: 3px solid #74A495;
+    clear: left;
+    text-align: center;
+    font-size: 0.8em;
+    color: #B0E5DC;
+}
+#content {
+    width: 1024px;
+    margin: auto;
+}
+header a {
+    text-decoration: none;
+}

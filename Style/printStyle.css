@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'junction';
+    src: url('junctionFont/Junction-webfont.eot');
+    src: url('junctionFont/Junction-webfont.eot?#iefix') format('embedded-opentype'),
+         url('junctionFont/Junction-webfont.woff') format('woff'),
+         url('junctionFont/Junction-webfont.ttf') format('truetype'),
+         url('junctionFont/Junction-webfont.svg#junction') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Helvetica, Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Makes the sign in link invisible for print*/
+#signin {
+    display: none;
+}
+
+h1 {
+    font-family: junction, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+    padding: 30px;
+    margin-top: 0px;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    margin-top: 0px;
+}
+
+/*Makes logo visible for print*/
+header img {
+    display: block;
+}
+
+/*Hides the navigation bar for print*/
+nav {
+    display: none;
+}
+
+h2 {
+    font-family: junction, sans-serif;
+    color: #000000;
+}
+
+#leftcol {
+    float: left; 
+    width: 30%;
+    padding-left: 10%;
+}
+
+#rightcol {
+    padding-left: 10%;
+    float: left;
+    width: 50%;
+}
+
+footer {
+    clear: left;
+    text-align: center;
+    font-size: 0.8em;
+    color: #000000;
+    margin: 30px;
+}
+
+#content {
+    width: 1024px;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+header a {
+    text-decoration: none;
+}
+
+/*Hides all the images for print*/
+img {
+    display: none;
+}
+
+table {
+    padding-bottom: 10%;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    padding: 0% 10%; 
+}
